@@ -33,12 +33,30 @@
 
         gtag('config', 'G-G8T77T17BB');
     </script>
+    <script>
+    window.fbAsyncInit = function() {
+        FB.init({
+        xfbml            : true,
+        version          : 'v10.0'
+        });
+    };
 
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 </head>
 
 <body>
-    <div class="fb-customerchat" page_id="101632355336799"></div>
+    <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+      <!-- Your plugin de chat code -->
+    <div class="fb-customerchat" attribution="page_inbox" page_id="101632355336799"></div>
     <div id="buttonws">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
